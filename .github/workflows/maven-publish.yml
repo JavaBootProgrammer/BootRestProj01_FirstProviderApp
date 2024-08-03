@@ -1,0 +1,9 @@
+- name: Checkout
+  uses: actions/checkout@v2
+
+- name: Sync Postman Collections
+  uses: jneate/postman-collection-action@v1
+  with:
+    postmanApiKey: ${{ secrets.postmanApiKey }}
+    postmanWorkspaceId: 0f41daa6-c9a7-49d9-8455-707e2f46da22
+    postmanTimeout: 30000
